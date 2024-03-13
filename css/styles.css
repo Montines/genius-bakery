@@ -1,3 +1,35 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+
 :root {
 	--color-primary-dark: #31261A;
 	--color-primary-light: #FAF4EA;
@@ -6,6 +38,10 @@
 }
 
 /* Base */
+* {
+	box-sizing: border-box;
+}
+
 body {
 	color: var(--color-primary-dark);
 	font-family: 'Poppins', sans-serif;
@@ -13,6 +49,17 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	font-style: normal;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
 }
 
 address {
@@ -23,8 +70,28 @@ ul {
 	list-style-type: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.section {
+	padding: 48px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1288px;
+	margin: 0 auto;
+}
+
 /* Button */
 .button {
+	padding: 16px 32px;
 	color: var(--color-primary-light);
 	font-weight: 600;
 	border-radius: 8px;
@@ -51,14 +118,16 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+	padding: 272px 0;
+}
+
 .hero-title {
+	margin-bottom: 0;
 	color: var(--color-primary-light);
-	font-family: 'Poppins', sans-serif;
-	text-decoration: none;
 	text-align: center;
 	font-size: 128px;
 	font-weight: 900;
-	font-style: normal;
 }
 
 .hero-title .accent {
@@ -89,6 +158,14 @@ ul {
 }
 
 /* Traditions section */
+.traditions-section {
+	padding-top: 96px;
+}
+
+.traditions-title {
+	margin-bottom: 42px;
+}
+
 .traditions-text .brand {
 	color: var(--color-brand-light);
 	font-weight: 600;
@@ -101,11 +178,20 @@ ul {
 
 /* Chef section */
 .chef-title {
+	margin-bottom: 16px;
 	font-size: 40px;
 	font-weight: 600;
 }
 
+.chefs-title {
+	margin-bottom: 80px;
+}
+
 /* Formats section */
+.formats-title {
+	margin-bottom: 80px;
+}
+
 .format-title {
 	font-size: 24px;
 	font-weight: 600;
@@ -114,6 +200,11 @@ ul {
 .format-text {
 	font-size: 14px;
 	font-weight: 300;
+}
+
+/* Contact section */
+.contact-title {
+	margin-bottom: 16px;
 }
 
 /* Footer */
