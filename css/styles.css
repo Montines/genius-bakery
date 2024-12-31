@@ -86,6 +86,13 @@ ul {
   background-color: transparent;
 }
 
+/*.button:disabled {
+  background-color: lightgrey;
+  color: grey;
+  border-color: currentColor;
+  cursor: not-allowed;
+}*/
+
 /* Link */
 .link {
   color: var(--color-primary-light);
