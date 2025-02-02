@@ -1,0 +1,30 @@
+.contact-section {
+  padding-bottom: 96px;
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: none;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+    max-width: 603px;
+    max-height: 595px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+}
