@@ -31,7 +31,9 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -137,7 +139,11 @@
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
           <div class="formats-container">
-            <button class="carousel-button" type="button">
+            <button
+              aria-label="Стрілка Carousel Left"
+              class="carousel-button"
+              type="button"
+            >
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -186,7 +192,11 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button
+              aria-label="Стрілка Carousel Right"
+              class="carousel-button"
+              type="button"
+            >
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -258,14 +268,14 @@
                 >
               </li>
               <li>
-                <a href="#">
+                <a aria-label="Іконка Facebook" href="#">
                   <svg class="address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a aria-label="Іконка Instagram" href="#">
                   <svg class="address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
@@ -282,5 +292,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
