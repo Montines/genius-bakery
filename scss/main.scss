@@ -4,7 +4,7 @@
 
 @import './utils/utils';
 
-@import './utils/section-container';
+@import './utils/container';
 
 @import './components/buttons';
 
@@ -13,6 +13,7 @@
 @import './components/header';
 
 @import './components/hero-sections.scss';
+@import './utils/texts';
 
 @import './components/advantages-section';
 
@@ -21,15 +22,18 @@
 @import './components/traditions-section';
 
 @import './components/chefs-section';
+@import './layouts/chef-card';
 
 @import './components/formats-sections';
+@import './layouts/format-card';
 
 @import './components/carousel';
 
 @import './components/contact-section';
+@import './layouts/form-terms';
 
 @import './components/footer';
 
 @import './components/modal';
 
-@import './components/form';
+@import './components/input';
